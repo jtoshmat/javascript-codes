@@ -9,7 +9,7 @@ var TOSH = {
 			  return regex.test(email);
 		},
 		//*******************************************************************//
-		//get querystring by passing the querystring name for example, www.amfam.com?facebook=2232323 sVar=facebook.
+		//get querystring by passing the querystring name for example, www.toshmatov.us?employee_id=2232323.
 		querystring : function (sVar){
 			return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
 		},
