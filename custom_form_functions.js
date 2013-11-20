@@ -20,4 +20,11 @@ var TOSH = {
 				$("#mydisplay").text(a);
 		},
 
+		replace_char : function(){
+			var input = $("#myinput").val();
+			var a = input.replace(/@/g, '*'); // replace @ with *
+			var b = input.replace(/\s/g, '-'); //replace space with - and etc
+			$("#mydisplay").text(a);
+		},
+
 }
