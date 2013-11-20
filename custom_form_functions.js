@@ -13,4 +13,11 @@ var TOSH = {
 		querystring : function (sVar){
 			return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
 		},
+
+		is_data_valid :  function(){
+				var input = $("#myinput").val();
+				var a = input || 'empty'; //if input is null or empty or undefined, it will be empty
+				$("#mydisplay").text(a);
+		},
+
 }
